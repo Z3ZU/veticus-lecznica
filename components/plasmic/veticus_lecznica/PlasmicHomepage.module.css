@@ -12,7 +12,7 @@
 .box___6Ppql {
   display: block;
   position: relative;
-  width: 1910px;
+  width: 1440px;
   height: 246px;
   left: auto;
   top: auto;
@@ -25,7 +25,7 @@
   object-fit: cover;
   width: 1438px;
   height: 243px;
-  left: 237px;
+  left: 0px;
   top: 4px;
   object-position: 50% 55%;
   z-index: 0;
@@ -69,7 +69,7 @@
   object-fit: cover;
   width: 768px;
   height: 195px;
-  left: 256px;
+  left: 220px;
   top: 0px;
   align-self: flex-start;
 }
@@ -122,7 +122,7 @@
   text-align: left;
   align-self: center;
   flex-shrink: 0;
-  padding: 0px 512px 63px 256px;
+  padding: 0px 128px 63px 256px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .box__nf4NP {
@@ -138,7 +138,7 @@
 .infoRoot {
   display: block;
   position: relative;
-  width: 1910px;
+  width: 1440px;
   height: 159px;
   left: auto;
   top: auto;
@@ -161,10 +161,10 @@
   display: block;
   position: absolute;
   width: 1440px;
-  height: 159px;
-  left: 240px;
+  height: 137px;
+  left: 0px;
   top: 0px;
-  background: linear-gradient(#013400b0, #013400b0), transparent;
+  background: linear-gradient(#1d533adb, #1d533adb), transparent;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .infoBackground {
@@ -177,13 +177,13 @@
 .box__sFLyi {
   color: #ffffff;
   position: absolute;
-  font-size: 19px;
+  font-size: 17px;
   left: 256px;
   top: 0px;
   width: 641px;
   height: 156px;
   font-weight: 400;
-  padding: 24px 0px 0px;
+  padding: 12px 0px 0px;
   background: transparent;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -204,8 +204,8 @@
   height: 155px;
   left: 672px;
   top: 0px;
-  font-size: 19px;
-  padding: 24px 0px 0px;
+  font-size: 17px;
+  padding: 12px 0px 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .box__cNzV8 {
