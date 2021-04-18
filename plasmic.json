@@ -1,0 +1,69 @@
+{
+  "platform": "nextjs",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
+  },
+  "images": {
+    "scheme": "public-files",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "6FdjgAyps8XDCSRfwRbJca",
+      "projectName": "Veticus-Lecznica",
+      "version": "latest",
+      "cssFilePath": "plasmic/veticus_lecznica/plasmic_veticus_lecznica.module.css",
+      "components": [
+        {
+          "id": "Re6zUsQooKFE",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "6FdjgAyps8XDCSRfwRbJca",
+          "renderModuleFilePath": "plasmic/veticus_lecznica/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/index.tsx"
+          },
+          "cssFilePath": "plasmic/veticus_lecznica/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        }
+      ],
+      "icons": [],
+      "images": [
+        {
+          "id": "1rYsNtJwD",
+          "name": "Logo",
+          "filePath": "../public/plasmic/veticus_lecznica/images/logo.png"
+        }
+      ],
+      "projectApiToken": "tXoq5lqP3KcHGQANa8xMwVHyksxvodIQZl1SiV40A5qPikqOoyYNAni1pK8eLAZzOUIlhgFaK12vQGovM4Q"
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "DuU_UFDf12SY",
+        "name": "Screen",
+        "projectId": "6FdjgAyps8XDCSRfwRbJca",
+        "contextFilePath": "plasmic/veticus_lecznica/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "nextjsConfig": {
+    "pagesDir": "../pages"
+  },
+  "cliVersion": "0.1.135",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.135/dist/plasmic.schema.json"
+}
