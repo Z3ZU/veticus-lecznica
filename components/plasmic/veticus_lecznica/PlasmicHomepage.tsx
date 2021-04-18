@@ -153,6 +153,8 @@ function PlasmicHomepage__RenderFunc(props: {
               src={"/plasmic/veticus_lecznica/images/photo1.jpeg"}
             />
           </div>
+
+          <div className={classNames(defaultcss.all, sty.box__hiTsa)} />
         </div>
         ) : null
       </div>

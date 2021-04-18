@@ -10,10 +10,10 @@
 }
 .box__nf4NP {
   position: absolute;
-  font-size: 24px;
+  font-size: 19px;
   left: 0px;
-  top: 640px;
-  width: 1798px;
+  top: 580px;
+  width: 1440px;
   height: 219px;
   font-weight: 400;
   color: #0c4c0c;
@@ -37,9 +37,9 @@
   align-items: flex-start;
   justify-content: flex-start;
   left: 0px;
-  top: 390px;
-  width: 1796px;
-  height: 256px;
+  top: 340px;
+  width: 1440px;
+  height: 204px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .box__sr3Wi {
@@ -53,8 +53,8 @@
 .img__aWgnM {
   position: relative;
   object-fit: cover;
-  width: 886px;
-  height: 216px;
+  width: 768px;
+  height: 195px;
   left: auto;
   top: auto;
   align-self: flex-start;
@@ -80,10 +80,10 @@
 .box__c0Ze {
   display: block;
   position: absolute;
-  width: 1395px;
+  width: 1008px;
   height: 4px;
   left: 256px;
-  top: 624px;
+  top: 554px;
   right: auto;
   background: #0e4b1e73;
 }
@@ -97,10 +97,10 @@
 .info {
   display: block;
   position: absolute;
-  width: 1399px;
-  height: 187px;
+  width: 996px;
+  height: 159px;
   left: 256px;
-  top: 881px;
+  top: 871px;
   background: linear-gradient(#013400b0, #013400b0), transparent;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -114,7 +114,7 @@
 .box__sFLyi {
   color: #ffffff;
   position: absolute;
-  font-size: 24px;
+  font-size: 19px;
   left: 0px;
   top: 0px;
   width: 458px;
@@ -125,7 +125,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .box__sFLyi {
-    width: 411px;
+    width: 400px;
     top: 0px;
     padding-left: 24px;
     padding-right: 24px;
@@ -137,12 +137,12 @@
 .box__cNzV8 {
   color: #ffffff;
   position: absolute;
-  width: 723px;
+  width: 320px;
   height: 183px;
   left: 672px;
   top: 0px;
-  font-size: 24px;
-  padding: 24px 256px 0px 0px;
+  font-size: 19px;
+  padding: 24px 0px 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .box__cNzV8 {
@@ -167,18 +167,27 @@
 .img__t6I05 {
   position: absolute;
   object-fit: cover;
-  width: 1797px;
-  height: 362px;
+  width: 1436px;
+  height: 306px;
   left: 0px;
-  top: 0px;
-  object-position: 50% 42%;
+  top: 4px;
+  object-position: 50% 55%;
   z-index: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .img__t6I05 {
     width: 412px;
-    height: 127px;
+    height: 122px;
     left: 0px;
-    top: 0px;
+    top: 5px;
   }
+}
+.box__hiTsa {
+  display: block;
+  position: absolute;
+  width: 1800px;
+  height: 1515px;
+  left: 0px;
+  top: 1143px;
+  background: transparent;
 }
