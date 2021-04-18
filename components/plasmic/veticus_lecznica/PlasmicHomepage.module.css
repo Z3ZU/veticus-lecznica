@@ -12,7 +12,7 @@
 .box___6Ppql {
   display: block;
   position: relative;
-  width: 1920px;
+  width: 1900px;
   height: 280px;
   left: auto;
   top: auto;
@@ -23,9 +23,9 @@
 .img__t6I05 {
   position: absolute;
   object-fit: cover;
-  width: 1916px;
+  width: 1900px;
   height: 291px;
-  left: 2px;
+  left: 0px;
   top: 0px;
   object-position: 30% 55%;
   z-index: 0;
@@ -42,7 +42,7 @@
 .box___5KnsH {
   display: block;
   position: absolute;
-  width: 1913px;
+  width: 1900px;
   height: 432px;
   left: 0px;
   top: 329px;
@@ -157,11 +157,13 @@
 .infoBackground {
   display: block;
   position: absolute;
-  width: 840px;
-  height: 170px;
-  left: 435px;
+  width: 1896px;
+  height: 136px;
+  left: -228px;
   top: 0px;
-  background: linear-gradient(#43595bb3, #43595bb3), transparent;
+  flex-direction: row;
+  justify-content: center;
+  background: linear-gradient(#3e7075b3, #3e7075b3), transparent;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .infoBackground {
@@ -171,13 +173,36 @@
     left: 0px;
   }
 }
+.box__cNzV8 {
+  color: #ffffff;
+  position: absolute;
+  width: 320px;
+  height: 155px;
+  left: 760px;
+  top: 0px;
+  font-size: 17px;
+  font-family: "Quicksand";
+  font-weight: 600;
+  padding: 12px 0px 0px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .box__cNzV8 {
+    left: 0px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 415px;
+    font-size: 24px;
+    top: 0px;
+    height: 164px;
+  }
+}
 .box__sFLyi {
   color: #ffffff;
   position: absolute;
   font-size: 17px;
-  left: 25px;
+  left: 470px;
   top: 0px;
-  width: 641px;
+  width: 268px;
   height: 156px;
   font-weight: 600;
   font-family: "Quicksand";
@@ -195,44 +220,13 @@
     left: 0px;
   }
 }
-.box__cNzV8 {
-  color: #ffffff;
-  position: absolute;
-  width: 320px;
-  height: 155px;
-  left: 389px;
-  top: 0px;
-  font-size: 17px;
-  font-family: "Quicksand";
-  font-weight: 600;
-  padding: 12px 0px 0px;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .box__cNzV8 {
-    left: 0px;
-    padding-left: 24px;
-    padding-right: 24px;
-    width: 415px;
-    font-size: 24px;
-    top: 160px;
-    height: 164px;
-  }
-}
 .box__hiTsa {
   display: block;
   position: relative;
-  width: 1440px;
+  width: 1900px;
   height: 1515px;
   left: auto;
   top: auto;
   flex-shrink: 0;
   background: transparent;
-}
-.box___50XtI {
-  display: block;
-  position: relative;
-  width: 1029px;
-  height: 554px;
-  flex-shrink: 0;
-  background: rgba(68, 192, 255, 0.2);
 }

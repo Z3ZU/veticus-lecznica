@@ -135,34 +135,32 @@ function PlasmicHomepage__RenderFunc(props: {
               data-plasmic-name={"infoBackground"}
               data-plasmic-override={overrides.infoBackground}
               className={classNames(defaultcss.all, sty.infoBackground)}
-            >
-              <div
-                className={classNames(
-                  defaultcss.all,
-                  defaultcss.__wab_text,
-                  sty.box__sFLyi
-                )}
-              >
-                {
-                  "Sędziszów Małopolski\nul. Tarnowskich 1\nkontakt@veticus-lecznica.pl\ntel. 510380864\n"
-                }
-              </div>
+            />
 
-              <div
-                className={classNames(
-                  defaultcss.all,
-                  defaultcss.__wab_text,
-                  sty.box__cNzV8
-                )}
-              >
-                {"Godziny otwarcia:\nponiedziałek - piątek \n12:00 - 18:00"}
-              </div>
+            <div
+              className={classNames(
+                defaultcss.all,
+                defaultcss.__wab_text,
+                sty.box__cNzV8
+              )}
+            >
+              {"Godziny otwarcia:\nponiedziałek - piątek \n12:00 - 18:00"}
+            </div>
+
+            <div
+              className={classNames(
+                defaultcss.all,
+                defaultcss.__wab_text,
+                sty.box__sFLyi
+              )}
+            >
+              {
+                "Sędziszów Małopolski\nul. Tarnowskich 1\nkontakt@veticus-lecznica.pl\ntel. 510380864\n"
+              }
             </div>
           </div>
 
           <div className={classNames(defaultcss.all, sty.box__hiTsa)} />
-
-          <div className={classNames(defaultcss.all, sty.box___50XtI)} />
         </div>
       </div>
     </React.Fragment>
