@@ -117,10 +117,11 @@
   top: auto;
   width: 1440px;
   height: 219px;
-  font-weight: 400;
-  color: #0c4c0c;
+  font-weight: 600;
+  color: #1d533adb /* plasmic-token: KMPOncbtg */;
   text-align: left;
   align-self: center;
+  font-family: "Andada";
   flex-shrink: 0;
   padding: 0px 128px 63px 256px;
 }
@@ -160,9 +161,9 @@
 .infoBackground {
   display: block;
   position: absolute;
-  width: 1440px;
+  width: 1008px;
   height: 137px;
-  left: 0px;
+  left: 256px;
   top: 0px;
   background: linear-gradient(#1d533adb, #1d533adb), transparent;
 }
@@ -178,11 +179,12 @@
   color: #ffffff;
   position: absolute;
   font-size: 17px;
-  left: 256px;
+  left: 24px;
   top: 0px;
   width: 641px;
   height: 156px;
   font-weight: 400;
+  font-family: "Quicksand";
   padding: 12px 0px 0px;
   background: transparent;
 }
@@ -202,9 +204,10 @@
   position: absolute;
   width: 320px;
   height: 155px;
-  left: 672px;
+  left: 400px;
   top: 0px;
   font-size: 17px;
+  font-family: "Quicksand";
   padding: 12px 0px 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
