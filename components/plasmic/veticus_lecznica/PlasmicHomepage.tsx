@@ -122,25 +122,6 @@ function PlasmicHomepage__RenderFunc(props: {
             ) : null}
           </div>
 
-          {(
-            hasVariant(globalVariants, "screen", "mobileOnly") ? false : true
-          ) ? (
-            <div className={classNames(defaultcss.all, sty.box___9NlAs)}>
-              {(
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? false
-                  : true
-              ) ? (
-                <img
-                  alt={""}
-                  className={classNames(defaultcss.img, sty.img__vkXp3)}
-                  role={"img"}
-                  src={"/plasmic/veticus_lecznica/images/map.png"}
-                />
-              ) : null}
-            </div>
-          ) : null}
-
           <div className={classNames(defaultcss.all, sty.box__c0Ze)} />
 
           <div
@@ -169,6 +150,16 @@ function PlasmicHomepage__RenderFunc(props: {
             >
               {"Godziny otwarcia:\nponiedziałek - piątek \n12:00 - 18:00"}
             </div>
+          </div>
+
+          <div
+            className={classNames(
+              defaultcss.all,
+              defaultcss.__wab_text,
+              sty.box__x6Z4P
+            )}
+          >
+            {"1920px"}
           </div>
         </div>
         ) : null
