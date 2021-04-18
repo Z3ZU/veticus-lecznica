@@ -31,6 +31,8 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 
+import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DuU_UFDf12SY/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_veticus_lecznica.module.css"; // plasmic-import: 6FdjgAyps8XDCSRfwRbJca/projectcss
@@ -47,8 +49,8 @@ type ArgPropType = keyof PlasmicHomepage__ArgsType;
 export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
-  root?: p.Flex<"div">;
-  img?: p.Flex<"img">;
+  main?: p.Flex<"div">;
+  info?: p.Flex<"div">;
 };
 
 export interface DefaultHomepageProps {
@@ -63,6 +65,10 @@ function PlasmicHomepage__RenderFunc(props: {
 }) {
   const { variants, args, overrides, forNode } = props;
 
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariants()
+  });
+
   return (
     <React.Fragment>
       <Head>
@@ -70,54 +76,118 @@ function PlasmicHomepage__RenderFunc(props: {
       </Head>
 
       <div className={defaultcss.plasmic_page_wrapper}>
+        (true) ? (
         <div
-          data-plasmic-name={"root"}
-          data-plasmic-override={overrides.root}
+          data-plasmic-name={"main"}
+          data-plasmic-override={overrides.main}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
           className={classNames(
             defaultcss.all,
             projectcss.root_reset,
-            sty.root
+            sty.main
           )}
         >
           <div
             className={classNames(
               defaultcss.all,
               defaultcss.__wab_text,
-              sty.box__sFLyi
+              sty.box__nf4NP
             )}
           >
-            {"Welcome to your first page."}
+            {hasVariant(globalVariants, "screen", "mobileOnly")
+              ? '\nNowy gabinet "Veticus" został założony przez lekarza weterynarii Wojciecha Kubasa. Pan Wojciech ma ponad 20 lat doświadczenia w leczeniu zwierząt domowych i posiada specjalizacje \nw dziedzinie radiologii.\n\nSerdecznie zapraszamy pacjętów \nz Sędziszowa Małopolskiego i okolic.'
+              : '\nNowy gabinet "Veticus" został założony przez lekarza weterynarii Wojciecha Kubasa. Pan Wojciech ma ponad 20 lat doświadczenia w leczeniu zwierząt domowych i posiada specjalizacje w dziedzinie radiologii.\n\nSerdecznie zapraszamy pacjętów z Sędziszowa Małopolskiego i okolic.'}
           </div>
 
-          <div className={classNames(defaultcss.all, sty.box__c0BXw)}>
+          <img
+            alt={""}
+            className={classNames(defaultcss.img, sty.img__t6I05)}
+            role={"img"}
+            src={"/plasmic/veticus_lecznica/images/photo1.jpeg"}
+          />
+
+          <div className={classNames(defaultcss.all, sty.box__sr3Wi)}>
             <img
-              data-plasmic-name={"img"}
-              data-plasmic-override={overrides.img}
               alt={""}
-              className={classNames(defaultcss.img, sty.img)}
+              className={classNames(defaultcss.img, sty.img__aWgnM)}
               role={"img"}
               src={"/plasmic/veticus_lecznica/images/logo.png"}
             />
+
+            {(
+              hasVariant(globalVariants, "screen", "mobileOnly") ? false : false
+            ) ? (
+              <div className={classNames(defaultcss.all, sty.box__gIrmH)} />
+            ) : null}
+          </div>
+
+          {(
+            hasVariant(globalVariants, "screen", "mobileOnly") ? false : true
+          ) ? (
+            <div className={classNames(defaultcss.all, sty.box___9NlAs)}>
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? false
+                  : true
+              ) ? (
+                <img
+                  alt={""}
+                  className={classNames(defaultcss.img, sty.img__vkXp3)}
+                  role={"img"}
+                  src={"/plasmic/veticus_lecznica/images/map.png"}
+                />
+              ) : null}
+            </div>
+          ) : null}
+
+          <div className={classNames(defaultcss.all, sty.box__c0Ze)} />
+
+          <div
+            data-plasmic-name={"info"}
+            data-plasmic-override={overrides.info}
+            className={classNames(defaultcss.all, sty.info)}
+          >
+            <div
+              className={classNames(
+                defaultcss.all,
+                defaultcss.__wab_text,
+                sty.box__sFLyi
+              )}
+            >
+              {
+                "Sędziszów Małopolski\nul. Tarnowskich 1\nkontakt@veticus-lecznica.pl\ntel. 510380864\n"
+              }
+            </div>
+
+            <div
+              className={classNames(
+                defaultcss.all,
+                defaultcss.__wab_text,
+                sty.box__cNzV8
+              )}
+            >
+              {"Godziny otwarcia:\nponiedziałek - piątek \n12:00 - 18:00"}
+            </div>
           </div>
         </div>
+        ) : null
       </div>
     </React.Fragment>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "img"],
-  img: ["img"]
+  main: ["main", "info"],
+  info: ["info"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<
   T extends NodeNameType
 > = typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
-  root: "div";
-  img: "img";
+  main: "div";
+  info: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -162,7 +232,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       forNode: nodeName
     });
   };
-  if (nodeName === "root") {
+  if (nodeName === "main") {
     func.displayName = "PlasmicHomepage";
   } else {
     func.displayName = `PlasmicHomepage.${nodeName}`;
@@ -172,10 +242,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicHomepage = Object.assign(
   // Top-level PlasmicHomepage renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent("main"),
   {
     // Helper components rendering sub-elements
-    img: makeNodeComponent("img"),
+    info: makeNodeComponent("info"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

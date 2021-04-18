@@ -1,5 +1,16 @@
 {
-  "props": [],
+  "props": [
+    {
+      "name": "DarkGreen",
+      "type": "color",
+      "value": "#013400B0",
+      "category": "color",
+      "meta": {
+        "projectId": "6FdjgAyps8XDCSRfwRbJca",
+        "id": "KMPOncbtg"
+      }
+    }
+  ],
   "global": {
     "meta": {
       "source": "plasmic.app"

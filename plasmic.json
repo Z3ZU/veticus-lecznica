@@ -46,6 +46,16 @@
           "id": "1rYsNtJwD",
           "name": "Logo",
           "filePath": "../public/plasmic/veticus_lecznica/images/logo.png"
+        },
+        {
+          "id": "MtjfrG2qU",
+          "name": "Map",
+          "filePath": "../public/plasmic/veticus_lecznica/images/map.png"
+        },
+        {
+          "id": "Ce6bHuWfx",
+          "name": "photo1",
+          "filePath": "../public/plasmic/veticus_lecznica/images/photo1.jpeg"
         }
       ],
       "projectApiToken": "tXoq5lqP3KcHGQANa8xMwVHyksxvodIQZl1SiV40A5qPikqOoyYNAni1pK8eLAZzOUIlhgFaK12vQGovM4Q"
