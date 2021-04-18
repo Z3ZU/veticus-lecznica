@@ -76,7 +76,6 @@ function PlasmicHomepage__RenderFunc(props: {
       </Head>
 
       <div className={defaultcss.plasmic_page_wrapper}>
-        (true) ? (
         <div
           data-plasmic-name={"main"}
           data-plasmic-override={overrides.main}
@@ -156,7 +155,6 @@ function PlasmicHomepage__RenderFunc(props: {
 
           <div className={classNames(defaultcss.all, sty.box__hiTsa)} />
         </div>
-        ) : null
       </div>
     </React.Fragment>
   ) as React.ReactElement | null;
