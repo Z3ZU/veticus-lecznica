@@ -95,6 +95,8 @@ function PlasmicHomepage__RenderFunc(props: {
               role={"img"}
               src={"/plasmic/veticus_lecznica/images/photo1.jpeg"}
             />
+
+            <div className={classNames(defaultcss.all, sty.box___5KnsH)} />
           </div>
 
           <div className={classNames(defaultcss.all, sty.box__sr3Wi)}>
@@ -110,8 +112,6 @@ function PlasmicHomepage__RenderFunc(props: {
             ) ? (
               <div className={classNames(defaultcss.all, sty.box__gIrmH)} />
             ) : null}
-
-            <div className={classNames(defaultcss.all, sty.box__c0Ze)} />
           </div>
 
           <div
@@ -123,7 +123,7 @@ function PlasmicHomepage__RenderFunc(props: {
           >
             {hasVariant(globalVariants, "screen", "mobileOnly")
               ? '\nNowy gabinet "Veticus" został założony przez lekarza weterynarii Wojciecha Kubasa. Pan Wojciech ma ponad 20 lat doświadczenia w leczeniu zwierząt domowych i posiada specjalizacje \nw dziedzinie radiologii.\n\nSerdecznie zapraszamy pacjętów \nz Sędziszowa Małopolskiego i okolic.'
-              : '\nGabinet "Veticus" został założony przez lekarza weterynarii Wojciecha Kubasa. \nPan Wojciech ma ponad 20 lat doświadczenia w leczeniu zwierząt domowych i posiada specjalizacje w dziedzinie radiologii.\n\nZapraszamy pacjętów z Sędziszowa Małopolskiego i okolic.'}
+              : '\nGabinet "Veticus" został założony przez lekarza weterynarii Wojciecha Kubasa. \nPan Wojciech ma ponad 20 lat doświadczenia w leczeniu zwierząt domowych \ni posiada specjalizacje w dziedzinie radiologii.\n\nZapraszamy pacjentów z Sędziszowa Małopolskiego i okolic.'}
           </div>
 
           <div
@@ -161,6 +161,8 @@ function PlasmicHomepage__RenderFunc(props: {
           </div>
 
           <div className={classNames(defaultcss.all, sty.box__hiTsa)} />
+
+          <div className={classNames(defaultcss.all, sty.box___50XtI)} />
         </div>
       </div>
     </React.Fragment>
