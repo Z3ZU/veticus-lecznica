@@ -73,7 +73,7 @@ function PlasmicHomepage__RenderFunc(props: {
   return (
     <React.Fragment>
       <Head>
-        <title key="title">{""}</title>
+        <title key="title">{"Veticus Wojciech Kubas"}</title>
       </Head>
 
       <div className={defaultcss.plasmic_page_wrapper}>
