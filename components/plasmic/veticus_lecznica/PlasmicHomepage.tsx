@@ -151,16 +151,6 @@ function PlasmicHomepage__RenderFunc(props: {
               {"Godziny otwarcia:\nponiedziałek - piątek \n12:00 - 18:00"}
             </div>
           </div>
-
-          <div
-            className={classNames(
-              defaultcss.all,
-              defaultcss.__wab_text,
-              sty.box__x6Z4P
-            )}
-          >
-            {"1920px"}
-          </div>
         </div>
         ) : null
       </div>
