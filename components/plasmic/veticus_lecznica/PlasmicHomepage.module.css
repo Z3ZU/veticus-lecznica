@@ -11,13 +11,14 @@
 .box__nf4NP {
   position: absolute;
   font-size: 19px;
-  left: 0px;
-  top: 580px;
-  width: 1440px;
+  left: -240px;
+  top: 490px;
+  width: 1920px;
   height: 219px;
   font-weight: 400;
   color: #0c4c0c;
-  padding: 0px 250px 0px 256px;
+  text-align: left;
+  padding: 0px 512px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .box__nf4NP {
@@ -30,16 +31,17 @@
   }
 }
 .box__sr3Wi {
-  padding-left: 200px;
-  display: flex;
+  display: block;
   position: absolute;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  left: 0px;
-  top: 340px;
-  width: 1440px;
+  left: -240px;
+  top: 280px;
+  width: 1920px;
   height: 204px;
+  right: auto;
+  padding-left: 512px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .box__sr3Wi {
@@ -51,14 +53,13 @@
   }
 }
 .img__aWgnM {
-  position: relative;
+  position: absolute;
   object-fit: cover;
   width: 768px;
   height: 195px;
-  left: auto;
-  top: auto;
+  left: 512px;
+  top: 0px;
   align-self: flex-start;
-  flex-shrink: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .img__aWgnM {
@@ -66,49 +67,69 @@
     top: auto;
     width: 473px;
     height: 108px;
-    flex-shrink: 0;
   }
 }
 .box__gIrmH {
   display: flex;
-  position: relative;
+  position: absolute;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  left: 0;
+  top: 0;
+  bottom: auto;
+  right: auto;
   background: rgba(68, 192, 255, 0.2);
 }
 .box__c0Ze {
   display: block;
   position: absolute;
-  width: 1008px;
+  width: 916px;
   height: 4px;
-  left: 256px;
-  top: 554px;
-  right: auto;
+  left: 512px;
+  top: 195px;
   background: #0e4b1e73;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .box__c0Ze {
-    top: 274px;
-    left: 25px;
+    top: auto;
+    left: auto;
     width: 382px;
+    right: auto;
   }
 }
-.info {
+.infoRoot {
   display: block;
   position: absolute;
-  width: 996px;
+  width: 1920px;
   height: 159px;
-  left: 256px;
-  top: 871px;
+  left: -240px;
+  top: 750px;
+  background: linear-gradient(transparent, transparent), transparent;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .infoRoot {
+    top: 0px;
+    width: 405px;
+    height: 327px;
+    left: 0px;
+  }
+}
+.infoBackground {
+  display: block;
+  position: absolute;
+  width: 988px;
+  height: 159px;
+  left: 512px;
+  top: 0px;
   background: linear-gradient(#013400b0, #013400b0), transparent;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .info {
-    top: 611px;
+  .infoBackground {
+    top: 0px;
     width: 405px;
     height: 327px;
-    left: 6px;
+    left: 0px;
   }
 }
 .box__sFLyi {
@@ -167,9 +188,9 @@
 .img__t6I05 {
   position: absolute;
   object-fit: cover;
-  width: 1436px;
-  height: 306px;
-  left: 0px;
+  width: 1920px;
+  height: 243px;
+  left: -240px;
   top: 4px;
   object-position: 50% 55%;
   z-index: 0;

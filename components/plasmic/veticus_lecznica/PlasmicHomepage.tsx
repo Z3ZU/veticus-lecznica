@@ -50,7 +50,8 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   main?: p.Flex<"div">;
-  info?: p.Flex<"div">;
+  infoRoot?: p.Flex<"div">;
+  infoBackground?: p.Flex<"div">;
 };
 
 export interface DefaultHomepageProps {
@@ -112,35 +113,41 @@ function PlasmicHomepage__RenderFunc(props: {
             ) ? (
               <div className={classNames(defaultcss.all, sty.box__gIrmH)} />
             ) : null}
+
+            <div className={classNames(defaultcss.all, sty.box__c0Ze)} />
           </div>
 
-          <div className={classNames(defaultcss.all, sty.box__c0Ze)} />
-
           <div
-            data-plasmic-name={"info"}
-            data-plasmic-override={overrides.info}
-            className={classNames(defaultcss.all, sty.info)}
+            data-plasmic-name={"infoRoot"}
+            data-plasmic-override={overrides.infoRoot}
+            className={classNames(defaultcss.all, sty.infoRoot)}
           >
             <div
-              className={classNames(
-                defaultcss.all,
-                defaultcss.__wab_text,
-                sty.box__sFLyi
-              )}
+              data-plasmic-name={"infoBackground"}
+              data-plasmic-override={overrides.infoBackground}
+              className={classNames(defaultcss.all, sty.infoBackground)}
             >
-              {
-                "Sędziszów Małopolski\nul. Tarnowskich 1\nkontakt@veticus-lecznica.pl\ntel. 510380864\n"
-              }
-            </div>
+              <div
+                className={classNames(
+                  defaultcss.all,
+                  defaultcss.__wab_text,
+                  sty.box__sFLyi
+                )}
+              >
+                {
+                  "Sędziszów Małopolski\nul. Tarnowskich 1\nkontakt@veticus-lecznica.pl\ntel. 510380864\n"
+                }
+              </div>
 
-            <div
-              className={classNames(
-                defaultcss.all,
-                defaultcss.__wab_text,
-                sty.box__cNzV8
-              )}
-            >
-              {"Godziny otwarcia:\nponiedziałek - piątek \n12:00 - 18:00"}
+              <div
+                className={classNames(
+                  defaultcss.all,
+                  defaultcss.__wab_text,
+                  sty.box__cNzV8
+                )}
+              >
+                {"Godziny otwarcia:\nponiedziałek - piątek \n12:00 - 18:00"}
+              </div>
             </div>
           </div>
 
@@ -161,8 +168,9 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  main: ["main", "info"],
-  info: ["info"]
+  main: ["main", "infoRoot", "infoBackground"],
+  infoRoot: ["infoRoot", "infoBackground"],
+  infoBackground: ["infoBackground"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<
@@ -170,7 +178,8 @@ type DescendantsType<
 > = typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   main: "div";
-  info: "div";
+  infoRoot: "div";
+  infoBackground: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -228,7 +237,8 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("main"),
   {
     // Helper components rendering sub-elements
-    info: makeNodeComponent("info"),
+    infoRoot: makeNodeComponent("infoRoot"),
+    infoBackground: makeNodeComponent("infoBackground"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
