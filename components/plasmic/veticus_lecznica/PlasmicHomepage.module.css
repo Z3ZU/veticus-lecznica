@@ -12,19 +12,20 @@
 .box___6Ppql {
   display: block;
   position: relative;
-  width: 1443px;
+  width: 1910px;
   height: 246px;
   left: auto;
   top: auto;
+  align-self: center;
   flex-shrink: 0;
   background: transparent;
 }
 .img__t6I05 {
   position: absolute;
   object-fit: cover;
-  width: 1920px;
+  width: 1438px;
   height: 243px;
-  left: -240px;
+  left: 237px;
   top: 4px;
   object-position: 50% 55%;
   z-index: 0;
@@ -45,7 +46,7 @@
   justify-content: flex-start;
   left: auto;
   top: auto;
-  width: 1920px;
+  width: 1910px;
   height: 204px;
   right: auto;
   padding-left: 512px;
@@ -114,14 +115,14 @@
   font-size: 19px;
   left: auto;
   top: auto;
-  width: 1920px;
+  width: 1910px;
   height: 219px;
   font-weight: 400;
   color: #0c4c0c;
   text-align: left;
   align-self: center;
   flex-shrink: 0;
-  padding: 0px 512px;
+  padding: 0px 512px 63px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .box__nf4NP {
@@ -137,11 +138,13 @@
 .infoRoot {
   display: block;
   position: relative;
-  width: 1920px;
+  width: 1910px;
   height: 159px;
   left: auto;
   top: auto;
   align-self: center;
+  margin-top: 33px;
+  margin-bottom: 38px;
   flex-shrink: 0;
   background: linear-gradient(transparent, transparent), transparent;
 }
