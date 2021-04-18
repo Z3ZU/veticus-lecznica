@@ -33,7 +33,7 @@
           "projectId": "6FdjgAyps8XDCSRfwRbJca",
           "renderModuleFilePath": "plasmic/veticus_lecznica/PlasmicHomepage.tsx",
           "importSpec": {
-            "modulePath": "../pages/home.tsx"
+            "modulePath": "../pages/index.tsx"
           },
           "cssFilePath": "plasmic/veticus_lecznica/PlasmicHomepage.module.css",
           "scheme": "blackbox",
