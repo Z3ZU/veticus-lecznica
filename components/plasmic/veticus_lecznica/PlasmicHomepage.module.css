@@ -58,7 +58,7 @@
   display: block;
   position: absolute;
   width: 1900px;
-  height: 230px;
+  height: 209px;
   left: 0px;
   top: 531px;
   flex-direction: row;
@@ -69,7 +69,7 @@
   .box___5KnsH {
     width: 414px;
     top: 279px;
-    height: 329px;
+    height: 278px;
     left: -1px;
   }
 }
@@ -148,14 +148,14 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .box__nf4NP {
-    width: 403px;
+    width: 407px;
     top: 252px;
-    font-size: 20px;
+    font-size: 18px;
     padding-left: 24px;
     padding-right: 24px;
     height: 322px;
     position: absolute;
-    left: 12px;
+    left: 0px;
   }
 }
 .infoRoot {
@@ -166,17 +166,17 @@
   left: auto;
   top: auto;
   align-self: center;
-  margin-top: 68px;
-  margin-bottom: 38px;
+  margin-top: 45px;
+  margin-bottom: 45px;
   flex-shrink: 0;
   background: linear-gradient(transparent, transparent), transparent;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .infoRoot {
-    top: 570px;
+    top: 530px;
     width: 405px;
     height: 278px;
-    left: 5px;
+    left: 0px;
     position: absolute;
   }
 }
@@ -195,8 +195,8 @@
   .infoBackground {
     top: 0px;
     width: 414px;
-    height: 276px;
-    left: -5px;
+    height: 239px;
+    left: 0px;
   }
 }
 .box__cNzV8 {
@@ -217,9 +217,9 @@
     padding-left: 24px;
     padding-right: 24px;
     width: 300px;
-    font-size: 19px;
-    top: 150px;
-    height: 164px;
+    font-size: 17px;
+    top: 130px;
+    height: 105px;
   }
 }
 .box__sFLyi {
@@ -241,7 +241,7 @@
     top: 0px;
     padding-left: 24px;
     padding-right: 24px;
-    font-size: 19px;
+    font-size: 17px;
     height: 136px;
     left: 0px;
   }

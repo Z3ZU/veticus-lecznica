@@ -123,7 +123,7 @@ function PlasmicHomepage__RenderFunc(props: {
             )}
           >
             {hasVariant(globalVariants, "screen", "mobileOnly")
-              ? '\nNowy gabinet "Veticus" został założony przez lekarza weterynarii Wojciecha Kubasa. Pan Wojciech ma ponad 20 lat doświadczenia w leczeniu zwierząt domowych i posiada specjalizacje \nw dziedzinie radiologii.\n\nSerdecznie zapraszamy pacjętów \nz Sędziszowa Małopolskiego i okolic.'
+              ? '\nGabinet "Veticus" został założony przez lekarza weterynarii Wojciecha Kubasa. \nPan Wojciech ma ponad 20 lat doświadczenia w leczeniu zwierząt domowych \ni posiada specjalizacje w dziedzinie radiologii.\n\nSerdecznie zapraszamy pacjentów z Sędziszowa Małopolskiego i okolic.'
               : '\nGabinet "Veticus" został założony przez lekarza weterynarii Wojciecha Kubasa. \nPan Wojciech ma ponad 20 lat doświadczenia w leczeniu zwierząt domowych \ni posiada specjalizacje w dziedzinie radiologii.\n\nSerdecznie zapraszamy pacjentów z Sędziszowa Małopolskiego i okolic.'}
           </div>
 
