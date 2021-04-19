@@ -167,8 +167,8 @@ function PlasmicHomepage__RenderFunc(props: {
               )}
             >
               {hasVariant(globalVariants, "screen", "mobileOnly")
-                ? 'Gabinet "Veticus" to nowoczesny zakład weterynaryjny. Zajmujemy się leczeniem zwierząt towarzyszących, gospodarskich oraz egzotycznych.\n\nCechuje nas połącznie doświadczenia w pracy ze zwierzętami oraz pasji związanej \nz wykonywaniem zawodu lekarza weterynarii. Ambicją placówki jest tworzenie miejsca oferujące fachową pomoc oraz przyjazną atmosferę'
-                : '\nGabinet "Veticus" to nowoczesny zakład weterynaryjny. Zajmujemy się leczeniem zwierząt towarzyszących, gospodarskich oraz egzotycznych.\n\nCechuje nas połącznie doświadczenia w pracy ze zwierzętami oraz pasji związanej \nz wykonywaniem zawodu lekarza weterynarii. Ambicją placówki jest tworzenie miejsca oferujące fachową pomoc oraz przyjazną atmosferę\n'}
+                ? 'Gabinet "Veticus" to nowoczesny zakład weterynaryjny. Zajmujemy się leczeniem zwierząt towarzyszących, gospodarskich oraz egzotycznych.\n\nCechuje nas doświadczenie w pracy ze zwierzętami i pasja związana  z wykonywaniem zawodu lekarza weterynarii. Naszą ambicją jest tworzenie miejsca, które oferuje fachową pomoc oraz przyjazną atmosferę.\n'
+                : '\nGabinet "Veticus" to nowoczesny zakład weterynaryjny. Zajmujemy się leczeniem zwierząt towarzyszących, gospodarskich oraz egzotycznych.\n\nCechuje nas doświadczenie w pracy ze zwierzętami i pasja związana \nz wykonywaniem zawodu lekarza weterynarii. Naszą ambicją jest tworzenie miejsca, które oferuje fachową pomoc oraz przyjazną atmosferę.\n'}
             </div>
 
             {(
