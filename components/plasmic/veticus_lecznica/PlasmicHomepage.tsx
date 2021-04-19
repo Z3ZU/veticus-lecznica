@@ -140,7 +140,9 @@ function PlasmicHomepage__RenderFunc(props: {
                 className={classNames(defaultcss.img, sty.img__pzVZp)}
                 role={"img"}
                 src={
-                  "/plasmic/veticus_lecznica/images/pexelsBasMasseus1203309Jpg.jpeg"
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "/plasmic/veticus_lecznica/images/pexelsBasMasseus1203309Mobilejpg.jpeg"
+                    : "/plasmic/veticus_lecznica/images/pexelsBasMasseus1203309Jpg.jpeg"
                 }
               />
             </div>

@@ -181,10 +181,11 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .img__pzVZp {
-    left: -681px;
+    left: 0px;
     top: 0px;
     object-position: 35% 60%;
     height: 348px;
+    width: 414px;
   }
 }
 .box__qcpd6 {
@@ -200,18 +201,20 @@
   align-self: center;
   font-family: "Slabo 27px";
   font-style: normal;
+  transition-property: all;
+  transition-duration: 1s;
   padding: 0px 0px 0px 256px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .box__qcpd6 {
     width: 407px;
-    top: 4px;
+    top: 64px;
     font-size: 35px;
     padding-left: 24px;
     padding-right: 24px;
     height: 55px;
     position: absolute;
-    left: 0px;
+    left: -10px;
   }
 }
 .box__nf4NP {
@@ -232,13 +235,13 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .box__nf4NP {
     width: 407px;
-    top: 64px;
-    font-size: 18px;
+    top: 115px;
+    font-size: 16px;
     padding-left: 24px;
     padding-right: 24px;
     height: 247px;
     position: absolute;
-    left: 0px;
+    left: -7px;
   }
 }
 .box__bsss9 {
