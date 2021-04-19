@@ -38,6 +38,19 @@
           "cssFilePath": "plasmic/veticus_lecznica/PlasmicHomepage.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "dgrRbg4850",
+          "name": "Map",
+          "type": "managed",
+          "projectId": "6FdjgAyps8XDCSRfwRbJca",
+          "renderModuleFilePath": "plasmic/veticus_lecznica/PlasmicMap.tsx",
+          "importSpec": {
+            "modulePath": "Map.tsx"
+          },
+          "cssFilePath": "plasmic/veticus_lecznica/PlasmicMap.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [],

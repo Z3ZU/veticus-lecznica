@@ -52,6 +52,7 @@ export type PlasmicHomepage__OverridesType = {
   main?: p.Flex<"div">;
   infoRoot?: p.Flex<"div">;
   infoBackground?: p.Flex<"div">;
+  map?: p.Flex<"code">;
 };
 
 export interface DefaultHomepageProps {
@@ -123,7 +124,7 @@ function PlasmicHomepage__RenderFunc(props: {
           >
             {hasVariant(globalVariants, "screen", "mobileOnly")
               ? '\nNowy gabinet "Veticus" został założony przez lekarza weterynarii Wojciecha Kubasa. Pan Wojciech ma ponad 20 lat doświadczenia w leczeniu zwierząt domowych i posiada specjalizacje \nw dziedzinie radiologii.\n\nSerdecznie zapraszamy pacjętów \nz Sędziszowa Małopolskiego i okolic.'
-              : '\nGabinet "Veticus" został założony przez lekarza weterynarii Wojciecha Kubasa. \nPan Wojciech ma ponad 20 lat doświadczenia w leczeniu zwierząt domowych \ni posiada specjalizacje w dziedzinie radiologii.\n\nZapraszamy pacjentów z Sędziszowa Małopolskiego i okolic.'}
+              : '\nGabinet "Veticus" został założony przez lekarza weterynarii Wojciecha Kubasa. \nPan Wojciech ma ponad 20 lat doświadczenia w leczeniu zwierząt domowych \ni posiada specjalizacje w dziedzinie radiologii.\n\nSerdecznie zapraszamy pacjentów z Sędziszowa Małopolskiego i okolic.'}
           </div>
 
           <div
@@ -155,12 +156,20 @@ function PlasmicHomepage__RenderFunc(props: {
               )}
             >
               {
-                "Sędziszów Małopolski\nul. Tarnowskich 1\nkontakt@veticus-lecznica.pl\ntel. 510380864\n"
+                "Sędziszów Małopolski\nul. Tarnowskich 1\nkontakt@veticus-lecznica.pl\ntel. ---"
               }
             </div>
           </div>
 
-          <div className={classNames(defaultcss.all, sty.box__hiTsa)} />
+          {(
+            hasVariant(globalVariants, "screen", "mobileOnly") ? false : true
+          ) ? (
+            <code
+              data-plasmic-name={"map"}
+              data-plasmic-override={overrides.map}
+              className={classNames(defaultcss.code, sty.map)}
+            />
+          ) : null}
         </div>
       </div>
     </React.Fragment>
@@ -168,9 +177,10 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  main: ["main", "infoRoot", "infoBackground"],
+  main: ["main", "infoRoot", "infoBackground", "map"],
   infoRoot: ["infoRoot", "infoBackground"],
-  infoBackground: ["infoBackground"]
+  infoBackground: ["infoBackground"],
+  map: ["map"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<
@@ -180,6 +190,7 @@ type NodeDefaultElementType = {
   main: "div";
   infoRoot: "div";
   infoBackground: "div";
+  map: "code";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -239,6 +250,7 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     infoRoot: makeNodeComponent("infoRoot"),
     infoBackground: makeNodeComponent("infoBackground"),
+    map: makeNodeComponent("map"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

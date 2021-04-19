@@ -58,9 +58,9 @@
   display: block;
   position: absolute;
   width: 1900px;
-  height: 432px;
+  height: 230px;
   left: 0px;
-  top: 329px;
+  top: 531px;
   flex-direction: row;
   justify-content: center;
   background: #7171711a;
@@ -69,7 +69,7 @@
   .box___5KnsH {
     width: 414px;
     top: 279px;
-    height: 248px;
+    height: 349px;
   }
 }
 .box__sr3Wi {
@@ -245,18 +245,18 @@
     left: 0px;
   }
 }
-.box__hiTsa {
+.map {
   display: block;
   position: relative;
   width: 1900px;
-  height: 1515px;
+  height: 340px;
   left: auto;
   top: auto;
   flex-shrink: 0;
   background: transparent;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .box__hiTsa {
+  .map {
     position: absolute;
     left: 0px;
     top: 1005px;
