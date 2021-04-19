@@ -48,7 +48,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .img__t6I05 {
-    width: 413px;
+    width: 414px;
     height: 127px;
     left: -1px;
     top: 0px;
@@ -69,7 +69,8 @@
   .box___5KnsH {
     width: 414px;
     top: 279px;
-    height: 349px;
+    height: 329px;
+    left: -1px;
   }
 }
 .box__sr3Wi {
@@ -91,7 +92,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .box__sr3Wi {
     left: 7px;
-    top: 137px;
+    top: 141px;
     width: 406px;
     padding-left: 0px;
     height: 128px;
@@ -105,14 +106,14 @@
   width: 768px;
   height: 195px;
   left: 222px;
-  top: 24px;
+  top: 12px;
   align-self: flex-start;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .img__aWgnM {
     left: auto;
     top: 0px;
-    width: 473px;
+    width: 405px;
     height: 108px;
     bottom: auto;
   }
@@ -148,7 +149,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .box__nf4NP {
     width: 403px;
-    top: 278px;
+    top: 252px;
     font-size: 20px;
     padding-left: 24px;
     padding-right: 24px;
@@ -172,7 +173,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .infoRoot {
-    top: 635px;
+    top: 570px;
     width: 405px;
     height: 278px;
     left: 5px;
@@ -193,9 +194,9 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .infoBackground {
     top: 0px;
-    width: 405px;
+    width: 414px;
     height: 276px;
-    left: 0px;
+    left: -5px;
   }
 }
 .box__cNzV8 {
@@ -215,7 +216,7 @@
     left: 0px;
     padding-left: 24px;
     padding-right: 24px;
-    width: 415px;
+    width: 300px;
     font-size: 19px;
     top: 150px;
     height: 164px;
@@ -236,7 +237,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .box__sFLyi {
-    width: 400px;
+    width: 323px;
     top: 0px;
     padding-left: 24px;
     padding-right: 24px;
