@@ -201,8 +201,6 @@
   align-self: center;
   font-family: "Slabo 27px";
   font-style: normal;
-  transition-property: all, all;
-  transition-duration: 1s, 1s;
   padding: 0px 0px 0px 256px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -230,8 +228,6 @@
   align-self: center;
   font-family: "Slabo 27px";
   font-style: normal;
-  transition-property: all;
-  transition-duration: 1s;
   padding: 0px 128px 0px 256px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
