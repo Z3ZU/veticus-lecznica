@@ -69,6 +69,21 @@
           "id": "Ce6bHuWfx",
           "name": "photo1",
           "filePath": "../public/plasmic/veticus_lecznica/images/photo1.jpeg"
+        },
+        {
+          "id": "zhwWa8Kku",
+          "name": "pexels-septimiu-lupea-6690152.jpg",
+          "filePath": "../public/plasmic/veticus_lecznica/images/pexelsSeptimiuLupea6690152Jpg.jpeg"
+        },
+        {
+          "id": "GoRcFSzLr",
+          "name": "pexels-bas-masseus-1203309.jpg",
+          "filePath": "../public/plasmic/veticus_lecznica/images/pexelsBasMasseus1203309Jpg.jpeg"
+        },
+        {
+          "id": "MbKU63Cum",
+          "name": "LogoIzba1.png",
+          "filePath": "../public/plasmic/veticus_lecznica/images/logoIzba1Png.png"
         }
       ],
       "projectApiToken": "tXoq5lqP3KcHGQANa8xMwVHyksxvodIQZl1SiV40A5qPikqOoyYNAni1pK8eLAZzOUIlhgFaK12vQGovM4Q"
