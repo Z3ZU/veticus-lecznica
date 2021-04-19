@@ -131,7 +131,7 @@
   display: block;
   position: relative;
   width: 1030px;
-  height: 271px;
+  height: 403px;
   left: auto;
   top: auto;
   align-self: center;
@@ -153,7 +153,7 @@
   display: block;
   position: absolute;
   width: 1900px;
-  height: 275px;
+  height: 422px;
   left: -437px;
   top: 0px;
   flex-direction: row;
@@ -172,7 +172,7 @@
   position: absolute;
   object-fit: cover;
   width: 1900px;
-  height: 289px;
+  height: 422px;
   left: 0px;
   top: 0px;
   object-position: 35% 60%;
@@ -191,7 +191,7 @@
   position: absolute;
   font-size: 45px;
   left: 0px;
-  top: 0px;
+  top: 140px;
   width: 1030px;
   height: 56px;
   font-weight: 500;
@@ -218,9 +218,9 @@
   position: absolute;
   font-size: 19px;
   left: 0px;
-  top: 39px;
+  top: 189px;
   width: 1030px;
-  height: 242px;
+  height: 214px;
   font-weight: 500;
   color: #ffffff;
   text-align: left;
