@@ -257,7 +257,7 @@
   display: block;
   position: relative;
   width: 1030px;
-  height: 290px;
+  height: 309px;
   left: auto;
   top: auto;
   align-self: center;
@@ -279,7 +279,7 @@
   display: block;
   position: absolute;
   width: 1900px;
-  height: 288px;
+  height: 300px;
   left: -435px;
   top: 4px;
   flex-direction: row;
@@ -302,7 +302,7 @@
   width: 320px;
   height: 109px;
   left: 520px;
-  top: 70px;
+  top: 95px;
   font-size: 17px;
   font-family: "Slabo 27px";
   font-weight: 500;
@@ -316,8 +316,8 @@
     padding-right: 24px;
     width: 300px;
     font-size: 17px;
-    top: 200px;
-    height: 105px;
+    top: 220px;
+    height: 80px;
   }
 }
 .box__sFLyi {
@@ -326,7 +326,7 @@
   position: absolute;
   font-size: 17px;
   left: 256px;
-  top: 70px;
+  top: 94px;
   width: 209px;
   height: 108px;
   font-weight: 500;
@@ -342,11 +342,11 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .box__sFLyi {
     width: 323px;
-    top: 50px;
+    top: 100px;
     padding-left: 24px;
     padding-right: 24px;
     font-size: 17px;
-    height: 136px;
+    height: 112px;
     left: 24px;
   }
 }
@@ -355,7 +355,7 @@
   position: absolute;
   font-size: 17px;
   left: 0px;
-  top: 180px;
+  top: 196px;
   width: 1030px;
   height: 94px;
   font-weight: 500;
@@ -375,13 +375,39 @@
     position: absolute;
   }
 }
+.box__w91SL {
+  color: #000000;
+  position: absolute;
+  font-size: 17px;
+  left: 0px;
+  top: 65px;
+  width: 1030px;
+  height: 26px;
+  font-weight: 600;
+  font-family: "Slabo 27px";
+  text-decoration-line: underline;
+  padding: 0px 128px 0px 256px;
+  background: transparent;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .box__w91SL {
+    width: 411px;
+    top: 60px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-size: 17px;
+    height: 28px;
+    left: 0px;
+    position: absolute;
+  }
+}
 .box__bdiLe {
   position: absolute;
   font-size: 45px;
   left: 0px;
   top: 6px;
   width: 1030px;
-  height: 74px;
+  height: auto;
   font-weight: 500;
   color: #000000fc;
   text-align: left;

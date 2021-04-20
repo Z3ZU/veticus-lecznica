@@ -251,6 +251,16 @@ function PlasmicHomepage__RenderFunc(props: {
               className={classNames(
                 defaultcss.all,
                 defaultcss.__wab_text,
+                sty.box__w91SL
+              )}
+            >
+              {"Gabinet jest jeszcze nieczynny. Wkrótce otwarcie.\n"}
+            </div>
+
+            <div
+              className={classNames(
+                defaultcss.all,
+                defaultcss.__wab_text,
                 sty.box__bdiLe
               )}
             >
