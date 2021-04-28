@@ -304,7 +304,7 @@
   left: 520px;
   top: 95px;
   font-size: 17px;
-  font-family: "Slabo 27px";
+  font-family: "Scada";
   font-weight: 500;
   padding: 0px 0px 0px 8px;
   border-width: 3px;
@@ -327,10 +327,10 @@
   font-size: 17px;
   left: 256px;
   top: 94px;
-  width: 209px;
+  width: 258px;
   height: 108px;
   font-weight: 500;
-  font-family: "Slabo 27px";
+  font-family: "Scada";
   border-top-color: transparent;
   border-right-color: transparent;
   border-bottom-color: transparent;
@@ -357,7 +357,7 @@
   left: 0px;
   top: 196px;
   width: 1030px;
-  height: 94px;
+  height: auto;
   font-weight: 500;
   font-family: "Slabo 27px";
   padding: 12px 128px 0px 256px;

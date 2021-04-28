@@ -78,6 +78,17 @@ function PlasmicHomepage__RenderFunc(props: {
     <React.Fragment>
       <Head>
         <title key="title">{"Veticus Wojciech Kubas"}</title>
+        <meta
+          key="og:title"
+          property="og:title"
+          content={"Veticus Wojciech Kubas"}
+        />
+        <meta
+          key="description"
+          name="description"
+          property="og:description"
+          content={""}
+        />
       </Head>
 
       <div className={defaultcss.plasmic_page_wrapper}>
@@ -207,7 +218,6 @@ function PlasmicHomepage__RenderFunc(props: {
               )}
             >
               <span>
-                <React.Fragment>{"Godziny otwarcia:\n"}</React.Fragment>
                 <span style={{ fontWeight: 700 }}>
                   {"poniedziałek - piątek "}
                 </span>
@@ -231,7 +241,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   {"kontakt@veticus-lecznica.pl"}
                 </span>
                 <React.Fragment>{"\n"}</React.Fragment>
-                <span style={{ fontWeight: 700 }}>{"tel. ---"}</span>
+                <span style={{ fontWeight: 700 }}>{"tel. 506 039 315"}</span>
               </span>
             </div>
 
