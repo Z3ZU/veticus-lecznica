@@ -379,15 +379,15 @@
   color: #000000;
   position: absolute;
   font-size: 17px;
-  left: 0px;
+  left: 257px;
   top: 65px;
-  width: 1030px;
+  width: 360px;
   height: 26px;
   font-weight: 600;
   font-family: "Slabo 27px";
-  text-decoration-line: underline;
-  padding: 0px 128px 0px 256px;
-  background: transparent;
+  text-decoration-line: none;
+  padding: 0px;
+  background: #fff100;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .box__w91SL {

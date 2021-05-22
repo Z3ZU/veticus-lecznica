@@ -8,8 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
-    "@plasmicapp/cli": "^0.1.142",
-    "@plasmicapp/react-web": "^0.2.27",
+    "@plasmicapp/cli": "^0.1.149",
+    "@plasmicapp/react-web": "^0.2.55",
     "@types/react": "^17.0.3",
     "next": "10.1.3",
     "react": "17.0.2",

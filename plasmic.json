@@ -2,7 +2,8 @@
   "platform": "nextjs",
   "code": {
     "lang": "ts",
-    "scheme": "blackbox"
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
   },
   "style": {
     "scheme": "css-modules",
@@ -107,6 +108,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.142",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.142/dist/plasmic.schema.json"
+  "cliVersion": "0.1.149",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.149/dist/plasmic.schema.json"
 }
