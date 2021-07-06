@@ -101,345 +101,357 @@ function PlasmicHomepage__RenderFunc(props: {
       `}</style>
 
       <div className={defaultcss.plasmic_page_wrapper}>
-        <div
-          data-plasmic-name={"main"}
-          data-plasmic-override={overrides.main}
-          data-plasmic-root={true}
-          data-plasmic-for-node={forNode}
-          className={classNames(
-            defaultcss.all,
-            projectcss.root_reset,
-            sty.main
-          )}
-        >
-          {false ? (
-            <div className={classNames(defaultcss.all, sty.box___6Ppql)}>
-              <img
-                alt={""}
-                className={classNames(defaultcss.img, sty.img__t6I05)}
-                height={2048 as const}
-                role={"img"}
-                src={"/plasmic/veticus_lecznica/images/photo1.jpeg"}
-                width={1536 as const}
-              />
-            </div>
-          ) : null}
-
-          <div className={classNames(defaultcss.all, sty.box__sr3Wi)}>
-            <img
-              alt={""}
-              className={classNames(defaultcss.img, sty.img__aWgnM)}
-              height={256 as const}
-              role={"img"}
-              src={"/plasmic/veticus_lecznica/images/logo.png"}
-              width={1024 as const}
-            />
-
-            {(
-              hasVariant(globalVariants, "screen", "mobileOnly") ? false : false
-            ) ? (
-              <div className={classNames(defaultcss.all, sty.box__gIrmH)} />
+        {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (
+          <div
+            data-plasmic-name={"main"}
+            data-plasmic-override={overrides.main}
+            data-plasmic-root={true}
+            data-plasmic-for-node={forNode}
+            className={classNames(
+              defaultcss.all,
+              projectcss.root_reset,
+              sty.main
+            )}
+          >
+            {false ? (
+              <div className={classNames(defaultcss.all, sty.box___6Ppql)}>
+                <img
+                  alt={""}
+                  className={classNames(defaultcss.img, sty.img__t6I05)}
+                  height={2048 as const}
+                  role={"img"}
+                  src={"/plasmic/veticus_lecznica/images/photo1.jpeg"}
+                  width={1536 as const}
+                />
+              </div>
             ) : null}
 
-            <img
-              alt={""}
-              className={classNames(defaultcss.img, sty.img__kvRb)}
-              height={512 as const}
-              role={"img"}
-              src={"/plasmic/veticus_lecznica/images/logoIzba1Png.png"}
-              width={512 as const}
-            />
-          </div>
-
-          <div
-            data-plasmic-name={"oNas"}
-            data-plasmic-override={overrides.oNas}
-            className={classNames(defaultcss.all, sty.oNas)}
-          >
-            <div
-              data-plasmic-name={"oNasBackground"}
-              data-plasmic-override={overrides.oNasBackground}
-              className={classNames(defaultcss.all, sty.oNasBackground)}
-            >
+            <div className={classNames(defaultcss.all, sty.box__sr3Wi)}>
               <img
                 alt={""}
-                className={classNames(defaultcss.img, sty.img__pzVZp)}
-                height={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? (1402 as const)
-                    : (2906 as const)
-                }
+                className={classNames(defaultcss.img, sty.img__aWgnM)}
+                height={256 as const}
                 role={"img"}
-                src={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "/plasmic/veticus_lecznica/images/pexelsBasMasseus1203309Mobilejpg.jpeg"
-                    : "/plasmic/veticus_lecznica/images/pexelsBasMasseus1203309Jpg.jpeg"
-                }
-                width={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? (1765 as const)
-                    : (3875 as const)
-                }
+                src={"/plasmic/veticus_lecznica/images/logo.png"}
+                width={1024 as const}
+              />
+
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? false
+                  : false
+              ) ? (
+                <div className={classNames(defaultcss.all, sty.box__gIrmH)} />
+              ) : null}
+
+              <img
+                alt={""}
+                className={classNames(defaultcss.img, sty.img__kvRb)}
+                height={512 as const}
+                role={"img"}
+                src={"/plasmic/veticus_lecznica/images/logoIzba1Png.png"}
+                width={512 as const}
               />
             </div>
 
             <div
-              className={classNames(
-                defaultcss.all,
-                defaultcss.__wab_text,
-                sty.box__qcpd6
-              )}
+              data-plasmic-name={"oNas"}
+              data-plasmic-override={overrides.oNas}
+              className={classNames(defaultcss.all, sty.oNas)}
             >
-              {hasVariant(globalVariants, "screen", "mobileOnly")
-                ? "O nas"
-                : "O nas\n"}
-            </div>
+              <div
+                data-plasmic-name={"oNasBackground"}
+                data-plasmic-override={overrides.oNasBackground}
+                className={classNames(defaultcss.all, sty.oNasBackground)}
+              >
+                <img
+                  alt={""}
+                  className={classNames(defaultcss.img, sty.img__pzVZp)}
+                  height={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? (1402 as const)
+                      : (2906 as const)
+                  }
+                  role={"img"}
+                  src={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "/plasmic/veticus_lecznica/images/pexelsBasMasseus1203309Mobilejpg.jpeg"
+                      : "/plasmic/veticus_lecznica/images/pexelsBasMasseus1203309Jpg.jpeg"
+                  }
+                  width={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? (1765 as const)
+                      : (3875 as const)
+                  }
+                />
+              </div>
 
-            <div
-              className={classNames(
-                defaultcss.all,
-                defaultcss.__wab_text,
-                sty.box__nf4NP
-              )}
-            >
-              {hasVariant(globalVariants, "screen", "mobileOnly")
-                ? 'Gabinet "Veticus" to nowoczesny zakład weterynaryjny. Zajmujemy się leczeniem zwierząt towarzyszących, gospodarskich oraz egzotycznych.\n\nCechuje nas doświadczenie w pracy ze zwierzętami i pasja związana  z wykonywaniem zawodu lekarza weterynarii. Naszą ambicją jest tworzenie miejsca, które oferuje fachową pomoc oraz przyjazną atmosferę.\n'
-                : '\nGabinet "Veticus" to nowoczesny zakład weterynaryjny. Zajmujemy się leczeniem zwierząt towarzyszących, gospodarskich oraz egzotycznych.\n\nCechuje nas doświadczenie w pracy ze zwierzętami i pasja związana \nz wykonywaniem zawodu lekarza weterynarii. Naszą ambicją jest tworzenie miejsca, które oferuje fachową pomoc oraz przyjazną atmosferę.\n'}
-            </div>
-
-            {(
-              hasVariant(globalVariants, "screen", "mobileOnly") ? false : false
-            ) ? (
               <div
                 className={classNames(
                   defaultcss.all,
                   defaultcss.__wab_text,
-                  sty.box__bsss9
+                  sty.box__qcpd6
                 )}
               >
                 {hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? "\n\n\n"
-                  : "\n\n\n"}
+                  ? "O nas"
+                  : "O nas\n"}
               </div>
-            ) : null}
+
+              <div
+                className={classNames(
+                  defaultcss.all,
+                  defaultcss.__wab_text,
+                  sty.box__nf4NP
+                )}
+              >
+                {hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? 'Gabinet "Veticus" to nowoczesny zakład weterynaryjny. Zajmujemy się leczeniem zwierząt towarzyszących\ni gospodarskich.\n\nCechuje nas doświadczenie w pracy ze zwierzętami i pasja związana  z wykonywaniem zawodu lekarza weterynarii. Naszą ambicją jest tworzenie miejsca, które oferuje fachową pomoc oraz przyjazną atmosferę.\n'
+                  : '\nGabinet "Veticus" to nowoczesny zakład weterynaryjny. Zajmujemy się leczeniem zwierząt towarzyszących i gospodarskich.\n\nCechuje nas doświadczenie w pracy ze zwierzętami i pasja związana \nz wykonywaniem zawodu lekarza weterynarii. Naszą ambicją jest tworzenie miejsca, które oferuje fachową pomoc oraz przyjazną atmosferę.\n'}
+              </div>
+
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? false
+                  : false
+              ) ? (
+                <div
+                  className={classNames(
+                    defaultcss.all,
+                    defaultcss.__wab_text,
+                    sty.box__bsss9
+                  )}
+                >
+                  {hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "\n\n\n"
+                    : "\n\n\n"}
+                </div>
+              ) : null}
+            </div>
+
+            <div
+              data-plasmic-name={"kontakt"}
+              data-plasmic-override={overrides.kontakt}
+              className={classNames(defaultcss.all, sty.kontakt)}
+            >
+              <div
+                data-plasmic-name={"kontaktBackground"}
+                data-plasmic-override={overrides.kontaktBackground}
+                className={classNames(defaultcss.all, sty.kontaktBackground)}
+              />
+
+              <div
+                className={classNames(
+                  defaultcss.all,
+                  defaultcss.__wab_text,
+                  sty.box__cNzV8
+                )}
+              >
+                {
+                  "poniedziałek - piątek \n12:00 - 18:00\nsobota\n10:00 - 14:00\n"
+                }
+              </div>
+
+              <div
+                className={classNames(
+                  defaultcss.all,
+                  defaultcss.__wab_text,
+                  sty.box__sFLyi
+                )}
+              >
+                {
+                  "Sędziszów Małopolski\nul. Tarnowskich 1\nkontakt@veticus-lecznica.pl\ntel. 506 039 315"
+                }
+              </div>
+
+              <div
+                className={classNames(
+                  defaultcss.all,
+                  defaultcss.__wab_text,
+                  sty.box__h2U4J
+                )}
+              >
+                {
+                  "Przypadki wymagające natychmiastowej pomocy przyjmujemy poza kolejnością, prosimy jednak poinformować nas o przybyciu, jeżeli jest taka możliwość.\nPomocy w nagłych przypadkach udzielamy całodobowo.\n"
+                }
+              </div>
+
+              <div
+                className={classNames(
+                  defaultcss.all,
+                  defaultcss.__wab_text,
+                  sty.box__w91SL
+                )}
+              >
+                {"Gabinet jest jeszcze nieczynny. Wkrótce otwarcie.\n"}
+              </div>
+
+              <div
+                className={classNames(
+                  defaultcss.all,
+                  defaultcss.__wab_text,
+                  sty.box__bdiLe
+                )}
+              >
+                {hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? "Kontakt\n"
+                  : "Kontakt"}
+              </div>
+            </div>
+
+            <div
+              data-plasmic-name={"uslugi"}
+              data-plasmic-override={overrides.uslugi}
+              className={classNames(defaultcss.all, sty.uslugi)}
+            >
+              <div
+                data-plasmic-name={"uslugiBackground"}
+                data-plasmic-override={overrides.uslugiBackground}
+                className={classNames(defaultcss.all, sty.uslugiBackground)}
+              />
+
+              <div
+                className={classNames(
+                  defaultcss.all,
+                  defaultcss.__wab_text,
+                  sty.box__l8FYe
+                )}
+              >
+                {hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? "Usługi\n"
+                  : "Usługi"}
+              </div>
+
+              <div
+                className={classNames(
+                  defaultcss.all,
+                  defaultcss.__wab_text,
+                  sty.box__szNM
+                )}
+              >
+                {hasVariant(globalVariants, "screen", "mobileOnly") ? (
+                  <span>
+                    <span style={{ fontWeight: 700 }}>{"■ kardiologia"}</span>
+                    <React.Fragment>
+                      {
+                        " (badania przeglądowe serca, diagnostyka wad serca, diagnostyka chorób nabytych, badanie radiologiczne klatki piersiowej)\n\n"
+                      }
+                    </React.Fragment>
+                    <span style={{ fontWeight: 700 }}>{"■ chirurgia"}</span>
+                    <React.Fragment>
+                      {
+                        " (szeroki zakres zabiegów chirurgicznych: zabiegi na jamie brzusznej, zabiegi na klatce piersiowej, zabiegi ortopedyczne)\n\n"
+                      }
+                    </React.Fragment>
+                    <span style={{ fontWeight: 700 }}>{"■ onkologia  "}</span>
+                    <React.Fragment>
+                      {"(chirurgia onkologiczna)\n\n"}
+                    </React.Fragment>
+                    <span style={{ fontWeight: 700 }}>
+                      {"■ dermatologia  "}
+                    </span>
+                    <React.Fragment>
+                      {
+                        "(diagnostyka dermatologiczna, badania bakteriologiczne, zeskrobiny skóry, biopsje skóry)\n\n"
+                      }
+                    </React.Fragment>
+                    <span style={{ fontWeight: 700 }}>{"■ okulistyka "}</span>
+                    <React.Fragment>
+                      {"(zabiegi na gałce ocznej, korekcja powiek)\n\n"}
+                    </React.Fragment>
+                    <span style={{ fontWeight: 700 }}>{"■ stomatologia "}</span>
+                    <React.Fragment>
+                      {
+                        "(usuwanie kamienia nazębnego ultradźwiękami, leczenie chorób przyzębia, ekstrakcja zębów, resorpcja korzeni, stomatologia gryzoni i zajęczaków)\n\n"
+                      }
+                    </React.Fragment>
+                    <span style={{ fontWeight: 700 }}>
+                      {"■ położnictwo i rozród "}
+                    </span>
+                    <React.Fragment>
+                      {
+                        "(wyznaczanie terminu krycia, diagnoza ciąży, kontrola przebiegu ciąży)\n\n"
+                      }
+                    </React.Fragment>
+                    <span style={{ fontWeight: 700 }}>
+                      {"■ badania laboratoryjne "}
+                    </span>
+                    <React.Fragment>
+                      {
+                        "(morfologia, biochemia, hormony, badanie moczu, badanie kału, testy w kierunku chorób zakaźnych)\n\n"
+                      }
+                    </React.Fragment>
+                    <span style={{ fontWeight: 700 }}>
+                      {"■ diagnostyka obrazowa "}
+                    </span>
+                    <React.Fragment>
+                      {"(badania USG, RTG, rentgen)\n\n"}
+                    </React.Fragment>
+                  </span>
+                ) : (
+                  <span>
+                    <span style={{ fontWeight: 700 }}>{"■ kardiologia"}</span>
+                    <React.Fragment>
+                      {
+                        " (badania przeglądowe serca, diagnostyka wad serca, diagnostyka chorób nabytych, badanie radiologiczne klatki piersiowej)\n\n"
+                      }
+                    </React.Fragment>
+                    <span style={{ fontWeight: 700 }}>{"■ chirurgia"}</span>
+                    <React.Fragment>
+                      {
+                        " (szeroki zakres zabiegów chirurgicznych: zabiegi na jamie brzusznej, zabiegi na klatce piersiowej, zabiegi ortopedyczne)\n\n"
+                      }
+                    </React.Fragment>
+                    <span style={{ fontWeight: 700 }}>{"■ onkologia  "}</span>
+                    <React.Fragment>
+                      {"(chirurgia onkologiczna)\n\n"}
+                    </React.Fragment>
+                    <span style={{ fontWeight: 700 }}>
+                      {"■ dermatologia  "}
+                    </span>
+                    <React.Fragment>
+                      {
+                        "(diagnostyka dermatologiczna, badania bakteriologiczne, zeskrobiny skóry, biopsje skóry)\n\n"
+                      }
+                    </React.Fragment>
+                    <span style={{ fontWeight: 700 }}>{"■ okulistyka "}</span>
+                    <React.Fragment>
+                      {"(zabiegi na gałce ocznej, korekcja powiek)\n\n"}
+                    </React.Fragment>
+                    <span style={{ fontWeight: 700 }}>{"■ stomatologia "}</span>
+                    <React.Fragment>
+                      {
+                        "(usuwanie kamienia nazębnego ultradźwiękami, leczenie chorób przyzębia, ekstrakcja zębów, resorpcja korzeni, stomatologia gryzoni i zajęczaków)\n\n"
+                      }
+                    </React.Fragment>
+                    <span style={{ fontWeight: 700 }}>
+                      {"■ położnictwo i rozród "}
+                    </span>
+                    <React.Fragment>
+                      {
+                        "(wyznaczanie terminu krycia, diagnoza ciąży, kontrola przebiegu ciąży)\n\n"
+                      }
+                    </React.Fragment>
+                    <span style={{ fontWeight: 700 }}>
+                      {"■ badania laboratoryjne "}
+                    </span>
+                    <React.Fragment>
+                      {
+                        "(morfologia, biochemia, hormony, badanie moczu, badanie kału, testy w kierunku chorób zakaźnych)\n\n"
+                      }
+                    </React.Fragment>
+                    <span style={{ fontWeight: 700 }}>
+                      {"■ diagnostyka obrazowa "}
+                    </span>
+                    <React.Fragment>
+                      {"(badania USG, RTG, rentgen)\n"}
+                    </React.Fragment>
+                  </span>
+                )}
+              </div>
+            </div>
           </div>
-
-          <div
-            data-plasmic-name={"kontakt"}
-            data-plasmic-override={overrides.kontakt}
-            className={classNames(defaultcss.all, sty.kontakt)}
-          >
-            <div
-              data-plasmic-name={"kontaktBackground"}
-              data-plasmic-override={overrides.kontaktBackground}
-              className={classNames(defaultcss.all, sty.kontaktBackground)}
-            />
-
-            <div
-              className={classNames(
-                defaultcss.all,
-                defaultcss.__wab_text,
-                sty.box__cNzV8
-              )}
-            >
-              {"poniedziałek - piątek \n12:00 - 18:00\nsobota\n10:00 - 14:00\n"}
-            </div>
-
-            <div
-              className={classNames(
-                defaultcss.all,
-                defaultcss.__wab_text,
-                sty.box__sFLyi
-              )}
-            >
-              {
-                "Sędziszów Małopolski\nul. Tarnowskich 1\nkontakt@veticus-lecznica.pl\ntel. 506 039 315"
-              }
-            </div>
-
-            <div
-              className={classNames(
-                defaultcss.all,
-                defaultcss.__wab_text,
-                sty.box__h2U4J
-              )}
-            >
-              {
-                "Przypadki wymagające natychmiastowej pomocy przyjmujemy poza kolejnością, prosimy jednak poinformować nas o przybyciu, jeżeli jest taka możliwość.\nPomocy w nagłych przypadkach udzielamy całodobowo.\n"
-              }
-            </div>
-
-            <div
-              className={classNames(
-                defaultcss.all,
-                defaultcss.__wab_text,
-                sty.box__w91SL
-              )}
-            >
-              {"Gabinet jest jeszcze nieczynny. Wkrótce otwarcie.\n"}
-            </div>
-
-            <div
-              className={classNames(
-                defaultcss.all,
-                defaultcss.__wab_text,
-                sty.box__bdiLe
-              )}
-            >
-              {hasVariant(globalVariants, "screen", "mobileOnly")
-                ? "Kontakt\n"
-                : "Kontakt"}
-            </div>
-          </div>
-
-          <div
-            data-plasmic-name={"uslugi"}
-            data-plasmic-override={overrides.uslugi}
-            className={classNames(defaultcss.all, sty.uslugi)}
-          >
-            <div
-              data-plasmic-name={"uslugiBackground"}
-              data-plasmic-override={overrides.uslugiBackground}
-              className={classNames(defaultcss.all, sty.uslugiBackground)}
-            />
-
-            <div
-              className={classNames(
-                defaultcss.all,
-                defaultcss.__wab_text,
-                sty.box__l8FYe
-              )}
-            >
-              {hasVariant(globalVariants, "screen", "mobileOnly")
-                ? "Usługi\n"
-                : "Usługi"}
-            </div>
-
-            <div
-              className={classNames(
-                defaultcss.all,
-                defaultcss.__wab_text,
-                sty.box__szNM
-              )}
-            >
-              {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                <span>
-                  <span style={{ fontWeight: 700 }}>{"■ kardiologia"}</span>
-                  <React.Fragment>
-                    {
-                      " (badania przeglądowe serca, diagnostyka wad serca, diagnostyka chorób nabytych, badanie radiologiczne klatki piersiowej)\n\n"
-                    }
-                  </React.Fragment>
-                  <span style={{ fontWeight: 700 }}>{"■ chirurgia"}</span>
-                  <React.Fragment>
-                    {
-                      " (szeroki zakres zabiegów chirurgicznych: zabiegi na jamie brzusznej, zabiegi na klatce piersiowej, zabiegi ortopedyczne)\n\n"
-                    }
-                  </React.Fragment>
-                  <span style={{ fontWeight: 700 }}>{"■ onkologia  "}</span>
-                  <React.Fragment>
-                    {"(chirurgia onkologiczna)\n\n"}
-                  </React.Fragment>
-                  <span style={{ fontWeight: 700 }}>{"■ dermatologia  "}</span>
-                  <React.Fragment>
-                    {
-                      "(diagnostyka dermatologiczna, badania bakteriologiczne, zeskrobiny skóry, biopsje skóry)\n\n"
-                    }
-                  </React.Fragment>
-                  <span style={{ fontWeight: 700 }}>{"■ okulistyka "}</span>
-                  <React.Fragment>
-                    {"(zabiegi na gałce ocznej, korekcja powiek)\n\n"}
-                  </React.Fragment>
-                  <span style={{ fontWeight: 700 }}>{"■ stomatologia "}</span>
-                  <React.Fragment>
-                    {
-                      "(usuwanie kamienia nazębnego ultradźwiękami, leczenie chorób przyzębia, ekstrakcja zębów, resorpcja korzeni, stomatologia gryzoni i zajęczaków)\n\n"
-                    }
-                  </React.Fragment>
-                  <span style={{ fontWeight: 700 }}>
-                    {"■ położnictwo i rozród "}
-                  </span>
-                  <React.Fragment>
-                    {
-                      "(wyznaczanie terminu krycia, diagnoza ciąży, kontrola przebiegu ciąży)\n\n"
-                    }
-                  </React.Fragment>
-                  <span style={{ fontWeight: 700 }}>
-                    {"■ badania laboratoryjne "}
-                  </span>
-                  <React.Fragment>
-                    {
-                      "(morfologia, biochemia, hormony, badanie moczu, badanie kału, testy w kierunku chorób zakaźnych)\n\n"
-                    }
-                  </React.Fragment>
-                  <span style={{ fontWeight: 700 }}>
-                    {"■ diagnostyka obrazowa "}
-                  </span>
-                  <React.Fragment>
-                    {"(badania USG, RTG, rentgen)\n\n"}
-                  </React.Fragment>
-                </span>
-              ) : (
-                <span>
-                  <span style={{ fontWeight: 700 }}>{"■ kardiologia"}</span>
-                  <React.Fragment>
-                    {
-                      " (badania przeglądowe serca, diagnostyka wad serca, diagnostyka chorób nabytych, badanie radiologiczne klatki piersiowej)\n\n"
-                    }
-                  </React.Fragment>
-                  <span style={{ fontWeight: 700 }}>{"■ chirurgia"}</span>
-                  <React.Fragment>
-                    {
-                      " (szeroki zakres zabiegów chirurgicznych: zabiegi na jamie brzusznej, zabiegi na klatce piersiowej, zabiegi ortopedyczne)\n\n"
-                    }
-                  </React.Fragment>
-                  <span style={{ fontWeight: 700 }}>{"■ onkologia  "}</span>
-                  <React.Fragment>
-                    {"(chirurgia onkologiczna)\n\n"}
-                  </React.Fragment>
-                  <span style={{ fontWeight: 700 }}>{"■ dermatologia  "}</span>
-                  <React.Fragment>
-                    {
-                      "(diagnostyka dermatologiczna, badania bakteriologiczne, zeskrobiny skóry, biopsje skóry)\n\n"
-                    }
-                  </React.Fragment>
-                  <span style={{ fontWeight: 700 }}>{"■ okulistyka "}</span>
-                  <React.Fragment>
-                    {"(zabiegi na gałce ocznej, korekcja powiek)\n\n"}
-                  </React.Fragment>
-                  <span style={{ fontWeight: 700 }}>{"■ stomatologia "}</span>
-                  <React.Fragment>
-                    {
-                      "(usuwanie kamienia nazębnego ultradźwiękami, leczenie chorób przyzębia, ekstrakcja zębów, resorpcja korzeni, stomatologia gryzoni i zajęczaków)\n\n"
-                    }
-                  </React.Fragment>
-                  <span style={{ fontWeight: 700 }}>
-                    {"■ położnictwo i rozród "}
-                  </span>
-                  <React.Fragment>
-                    {
-                      "(wyznaczanie terminu krycia, diagnoza ciąży, kontrola przebiegu ciąży)\n\n"
-                    }
-                  </React.Fragment>
-                  <span style={{ fontWeight: 700 }}>
-                    {"■ badania laboratoryjne "}
-                  </span>
-                  <React.Fragment>
-                    {
-                      "(morfologia, biochemia, hormony, badanie moczu, badanie kału, testy w kierunku chorób zakaźnych)\n\n"
-                    }
-                  </React.Fragment>
-                  <span style={{ fontWeight: 700 }}>
-                    {"■ diagnostyka obrazowa "}
-                  </span>
-                  <React.Fragment>
-                    {"(badania USG, RTG, rentgen)\n"}
-                  </React.Fragment>
-                </span>
-              )}
-            </div>
-          </div>
-        </div>
+        ) : null}
       </div>
     </React.Fragment>
   ) as React.ReactElement | null;
