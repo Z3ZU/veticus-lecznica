@@ -199,7 +199,7 @@
   color: #ffffff;
   text-align: left;
   align-self: center;
-  font-family: "Slabo 27px";
+  font-family: "Slabo 27px", serif;
   font-style: normal;
   padding: 0px 0px 0px 256px;
 }
@@ -226,7 +226,7 @@
   color: #ffffff;
   text-align: left;
   align-self: center;
-  font-family: "Slabo 27px";
+  font-family: "Slabo 27px", serif;
   font-style: normal;
   padding: 0px 128px 0px 256px;
 }
@@ -304,7 +304,7 @@
   left: 520px;
   top: 95px;
   font-size: 17px;
-  font-family: "Scada";
+  font-family: "Scada", sans-serif;
   font-weight: 500;
   padding: 0px 0px 0px 8px;
   border-width: 3px;
@@ -330,7 +330,7 @@
   width: 258px;
   height: 108px;
   font-weight: 500;
-  font-family: "Scada";
+  font-family: "Scada", sans-serif;
   border-top-color: transparent;
   border-right-color: transparent;
   border-bottom-color: transparent;
@@ -359,7 +359,7 @@
   width: 1030px;
   height: auto;
   font-weight: 500;
-  font-family: "Slabo 27px";
+  font-family: "Slabo 27px", serif;
   padding: 12px 128px 0px 256px;
   background: transparent;
 }
@@ -381,10 +381,10 @@
   font-size: 17px;
   left: 257px;
   top: 65px;
-  width: 360px;
+  width: 469px;
   height: 26px;
   font-weight: 600;
-  font-family: "Slabo 27px";
+  font-family: "Slabo 27px", serif;
   text-decoration-line: none;
   padding: 0px;
   background: #fff100;
@@ -412,7 +412,7 @@
   color: #000000fc;
   text-align: left;
   align-self: center;
-  font-family: "Slabo 27px";
+  font-family: "Slabo 27px", serif;
   font-style: normal;
   padding: 0px 0px 0px 256px;
 }
@@ -483,7 +483,7 @@
   color: #000000;
   text-align: left;
   align-self: center;
-  font-family: "Slabo 27px";
+  font-family: "Slabo 27px", serif;
   font-style: normal;
   flex-shrink: 0;
   padding: 0px 0px 0px 256px;
@@ -512,7 +512,7 @@
   color: #000000;
   text-align: left;
   align-self: center;
-  font-family: "Slabo 27px";
+  font-family: "Slabo 27px", serif;
   font-style: normal;
   flex-shrink: 0;
   padding: 12px 128px 0px 256px;

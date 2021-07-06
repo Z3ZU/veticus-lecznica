@@ -6,7 +6,6 @@
   position: relative;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  plasmic_display_none: false;
   box-shadow: none;
   box-sizing: border-box;
   text-decoration-line: none;
@@ -20,6 +19,8 @@
 .img {
   composes: all;
   display: inline-block;
+  width: auto;
+  height: auto;
 }
 .input {
   composes: all;

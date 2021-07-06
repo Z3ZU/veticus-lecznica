@@ -94,6 +94,12 @@ function PlasmicHomepage__RenderFunc(props: {
         />
       </Head>
 
+      <style>{`
+        body {
+          margin: 0;
+        }
+      `}</style>
+
       <div className={defaultcss.plasmic_page_wrapper}>
         <div
           data-plasmic-name={"main"}
@@ -111,8 +117,10 @@ function PlasmicHomepage__RenderFunc(props: {
               <img
                 alt={""}
                 className={classNames(defaultcss.img, sty.img__t6I05)}
+                height={2048 as const}
                 role={"img"}
                 src={"/plasmic/veticus_lecznica/images/photo1.jpeg"}
+                width={1536 as const}
               />
             </div>
           ) : null}
@@ -121,8 +129,10 @@ function PlasmicHomepage__RenderFunc(props: {
             <img
               alt={""}
               className={classNames(defaultcss.img, sty.img__aWgnM)}
+              height={256 as const}
               role={"img"}
               src={"/plasmic/veticus_lecznica/images/logo.png"}
+              width={1024 as const}
             />
 
             {(
@@ -134,8 +144,10 @@ function PlasmicHomepage__RenderFunc(props: {
             <img
               alt={""}
               className={classNames(defaultcss.img, sty.img__kvRb)}
+              height={512 as const}
               role={"img"}
               src={"/plasmic/veticus_lecznica/images/logoIzba1Png.png"}
+              width={512 as const}
             />
           </div>
 
@@ -152,11 +164,21 @@ function PlasmicHomepage__RenderFunc(props: {
               <img
                 alt={""}
                 className={classNames(defaultcss.img, sty.img__pzVZp)}
+                height={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? (1402 as const)
+                    : (2906 as const)
+                }
                 role={"img"}
                 src={
                   hasVariant(globalVariants, "screen", "mobileOnly")
                     ? "/plasmic/veticus_lecznica/images/pexelsBasMasseus1203309Mobilejpg.jpeg"
                     : "/plasmic/veticus_lecznica/images/pexelsBasMasseus1203309Jpg.jpeg"
+                }
+                width={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? (1765 as const)
+                    : (3875 as const)
                 }
               />
             </div>
@@ -220,7 +242,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 sty.box__cNzV8
               )}
             >
-              {"poniedziałek - piątek \n12:00 - 18:00\n\n"}
+              {"poniedziałek - piątek \n12:00 - 18:00\nsobota\n10:00 - 14:00\n"}
             </div>
 
             <div
