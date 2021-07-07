@@ -316,7 +316,7 @@
     padding-right: 24px;
     width: 300px;
     font-size: 17px;
-    top: 220px;
+    top: 235px;
     height: 99px;
   }
 }
@@ -342,7 +342,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .box__sFLyi {
     width: 323px;
-    top: 100px;
+    top: 120px;
     padding-left: 24px;
     padding-right: 24px;
     font-size: 17px;
@@ -396,7 +396,7 @@
     padding-left: 24px;
     padding-right: 24px;
     font-size: 17px;
-    height: 28px;
+    height: auto;
     left: 0px;
     position: absolute;
   }

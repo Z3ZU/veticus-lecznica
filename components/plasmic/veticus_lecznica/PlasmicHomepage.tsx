@@ -283,7 +283,9 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.box__w91SL
                 )}
               >
-                {"Gabinet jest jeszcze nieczynny. Wkrótce otwarcie.\n"}
+                {hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? "Gabinet jest jeszcze nieczynny. Otwarcie w sobotę 10.07"
+                  : "Gabinet jest jeszcze nieczynny. Otwarcie w sobotę 10.07"}
               </div>
 
               <div
