@@ -300,9 +300,9 @@
   border-left-style: solid;
   position: absolute;
   width: 320px;
-  height: auto;
+  height: 102px;
   left: 520px;
-  top: 95px;
+  top: 85px;
   font-size: 17px;
   font-family: "Scada", sans-serif;
   font-weight: 500;
@@ -316,7 +316,7 @@
     padding-right: 24px;
     width: 300px;
     font-size: 17px;
-    top: 235px;
+    top: 175px;
     height: 99px;
   }
 }
@@ -326,7 +326,7 @@
   position: absolute;
   font-size: 17px;
   left: 256px;
-  top: 94px;
+  top: 84px;
   width: 258px;
   height: 108px;
   font-weight: 500;
@@ -342,7 +342,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .box__sFLyi {
     width: 323px;
-    top: 120px;
+    top: 51px;
     padding-left: 24px;
     padding-right: 24px;
     font-size: 17px;
@@ -366,38 +366,12 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .box__h2U4J {
     width: 411px;
-    top: 340px;
+    top: 290px;
     padding-left: 24px;
     padding-right: 24px;
     font-size: 17px;
     height: 163px;
     left: 2px;
-    position: absolute;
-  }
-}
-.box__w91SL {
-  color: #000000;
-  position: absolute;
-  font-size: 17px;
-  left: 257px;
-  top: 65px;
-  width: 469px;
-  height: 26px;
-  font-weight: 600;
-  font-family: "Slabo 27px", serif;
-  text-decoration-line: none;
-  padding: 0px;
-  background: #fff100;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .box__w91SL {
-    width: 411px;
-    top: 60px;
-    padding-left: 24px;
-    padding-right: 24px;
-    font-size: 17px;
-    height: auto;
-    left: 0px;
     position: absolute;
   }
 }

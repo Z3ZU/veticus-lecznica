@@ -280,18 +280,6 @@ function PlasmicHomepage__RenderFunc(props: {
                 className={classNames(
                   defaultcss.all,
                   defaultcss.__wab_text,
-                  sty.box__w91SL
-                )}
-              >
-                {hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? "Gabinet jest jeszcze nieczynny. Otwarcie w sobotę 10.07"
-                  : "Gabinet jest jeszcze nieczynny. Otwarcie w sobotę 10.07"}
-              </div>
-
-              <div
-                className={classNames(
-                  defaultcss.all,
-                  defaultcss.__wab_text,
                   sty.box__bdiLe
                 )}
               >
