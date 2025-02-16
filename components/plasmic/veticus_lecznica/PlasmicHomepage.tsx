@@ -85,10 +85,10 @@ export type PlasmicHomepage__OverridesType = {
   kontaktBackground?: Flex__<"div">;
   uslugi?: Flex__<"div">;
   uslugiBackground?: Flex__<"div">;
-  uslugi2?: Flex__<"div">;
-  uslugiBackground2?: Flex__<"div">;
   uslugi3?: Flex__<"div">;
   uslugiBackground3?: Flex__<"div">;
+  uslugi2?: Flex__<"div">;
+  uslugiBackground2?: Flex__<"div">;
 };
 
 export interface DefaultHomepageProps {}
@@ -554,48 +554,6 @@ function PlasmicHomepage__RenderFunc(props: {
               )}
             </div>
           </div>
-          <div
-            data-plasmic-name={"uslugi2"}
-            data-plasmic-override={overrides.uslugi2}
-            className={classNames(projectcss.all, sty.uslugi2)}
-          >
-            <div
-              data-plasmic-name={"uslugiBackground2"}
-              data-plasmic-override={overrides.uslugiBackground2}
-              className={classNames(projectcss.all, sty.uslugiBackground2)}
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text___4P1Rr
-                )}
-              >
-                <React.Fragment>
-                  <React.Fragment>{""}</React.Fragment>
-                  {
-                    <PlasmicLink__
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        projectcss.__wab_text,
-                        projectcss.plasmic_default__inline,
-                        sty.link___7FCRt
-                      )}
-                      component={Link}
-                      href={
-                        "https://drive.google.com/file/d/10A3J0VwX-NDRtvZpMrGQ3FkVlFJZKOjI/view?usp=sharing"
-                      }
-                      platform={"nextjs"}
-                    >
-                      {"Informacja o wp\u0142ywie RTG "}
-                    </PlasmicLink__>
-                  }
-                  <React.Fragment>{""}</React.Fragment>
-                </React.Fragment>
-              </div>
-            </div>
-          </div>
           {(
             hasVariant(globalVariants, "screen", "mobileOnly") ? true : false
           ) ? (
@@ -654,6 +612,48 @@ function PlasmicHomepage__RenderFunc(props: {
               {"3333px"}
             </div>
           ) : null}
+          <div
+            data-plasmic-name={"uslugi2"}
+            data-plasmic-override={overrides.uslugi2}
+            className={classNames(projectcss.all, sty.uslugi2)}
+          >
+            <div
+              data-plasmic-name={"uslugiBackground2"}
+              data-plasmic-override={overrides.uslugiBackground2}
+              className={classNames(projectcss.all, sty.uslugiBackground2)}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text___4P1Rr
+                )}
+              >
+                <React.Fragment>
+                  <React.Fragment>{""}</React.Fragment>
+                  {
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.__wab_text,
+                        projectcss.plasmic_default__inline,
+                        sty.link___7FCRt
+                      )}
+                      component={Link}
+                      href={
+                        "https://drive.google.com/file/d/10A3J0VwX-NDRtvZpMrGQ3FkVlFJZKOjI/view?usp=sharing"
+                      }
+                      platform={"nextjs"}
+                    >
+                      {"Informacja o wp\u0142ywie RTG "}
+                    </PlasmicLink__>
+                  }
+                  <React.Fragment>{""}</React.Fragment>
+                </React.Fragment>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </React.Fragment>
@@ -669,10 +669,10 @@ const PlasmicDescendants = {
     "kontaktBackground",
     "uslugi",
     "uslugiBackground",
-    "uslugi2",
-    "uslugiBackground2",
     "uslugi3",
-    "uslugiBackground3"
+    "uslugiBackground3",
+    "uslugi2",
+    "uslugiBackground2"
   ],
   oNas: ["oNas", "oNasBackground"],
   oNasBackground: ["oNasBackground"],
@@ -680,10 +680,10 @@ const PlasmicDescendants = {
   kontaktBackground: ["kontaktBackground"],
   uslugi: ["uslugi", "uslugiBackground"],
   uslugiBackground: ["uslugiBackground"],
-  uslugi2: ["uslugi2", "uslugiBackground2"],
-  uslugiBackground2: ["uslugiBackground2"],
   uslugi3: ["uslugi3"],
-  uslugiBackground3: ["uslugiBackground3"]
+  uslugiBackground3: ["uslugiBackground3"],
+  uslugi2: ["uslugi2", "uslugiBackground2"],
+  uslugiBackground2: ["uslugiBackground2"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -696,10 +696,10 @@ type NodeDefaultElementType = {
   kontaktBackground: "div";
   uslugi: "div";
   uslugiBackground: "div";
-  uslugi2: "div";
-  uslugiBackground2: "div";
   uslugi3: "div";
   uslugiBackground3: "div";
+  uslugi2: "div";
+  uslugiBackground2: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -768,10 +768,10 @@ export const PlasmicHomepage = Object.assign(
     kontaktBackground: makeNodeComponent("kontaktBackground"),
     uslugi: makeNodeComponent("uslugi"),
     uslugiBackground: makeNodeComponent("uslugiBackground"),
-    uslugi2: makeNodeComponent("uslugi2"),
-    uslugiBackground2: makeNodeComponent("uslugiBackground2"),
     uslugi3: makeNodeComponent("uslugi3"),
     uslugiBackground3: makeNodeComponent("uslugiBackground3"),
+    uslugi2: makeNodeComponent("uslugi2"),
+    uslugiBackground2: makeNodeComponent("uslugiBackground2"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
