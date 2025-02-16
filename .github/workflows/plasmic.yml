@@ -1,5 +1,9 @@
-# Plasmic workflow v3
+# Plasmic workflow v4
 name: Sync, build and deploy Plasmic app
+
+permissions:
+  contents: write
+  pull-requests: write
 
 on:
   repository_dispatch:
@@ -17,10 +21,10 @@ jobs:
           persist-credentials: false
           fetch-depth: 0
       - id: node
-        name: Setting up node v14...
-        uses: actions/setup-node@v2
+        name: Setting up node v18...
+        uses: actions/setup-node@v3
         with:
-          node-version: "14"
+          node-version: "18"
       - id: cache
         name: Recovering cache...
         uses: actions/cache@v2
@@ -65,13 +69,6 @@ jobs:
           branch: ${{ github.event.client_payload.data.branch }}
           directory: ${{ github.event.client_payload.data.directory }}
           platform: ${{ github.event.client_payload.data.platform }}
-      - id: gh-pages
-        name: Publishing to GitHub Pages...
-        uses: JamesIves/github-pages-deploy-action@4.1.0
-        if: ${{ steps.build.outputs.publish_dir }}
-        with:
-          branch: gh-pages
-          folder: ${{ steps.build.outputs.publish_dir }}
       - id: pr
         name: Creating pull request...
         uses: repo-sync/pull-request@v2
